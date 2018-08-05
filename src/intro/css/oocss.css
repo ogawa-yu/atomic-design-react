@@ -1,0 +1,9 @@
+.button {
+    display: inline-block;
+    vertical-align: bottom;
+}
+.small { padding: 5px 20px; }
+.large { padding: 8px 32px; }
+.primary { background-color: #51C300; }
+.accept { background-color: #f0163a; }
+
