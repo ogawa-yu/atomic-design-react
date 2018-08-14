@@ -1,0 +1,13 @@
+<div>影響がないdiv要素</div>
+<script>
+    const element = document.createElement('div');
+    element.attachShadow({ mode: 'open' }).innerHTML = `
+        <style>
+            div {
+                background-color: #51C300;
+            }
+        </style>
+        <div>Shadow DOM内のdiv要素</div>
+    `;
+    document.body.appendChild(element);
+</script>
