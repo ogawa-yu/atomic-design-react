@@ -1,0 +1,17 @@
+<style>
+    section {
+        color: #f0163a;
+    }
+</style>
+<section>
+    <h2>影響がある見出し</h2>
+    <p>影響があるサブタイトル</p>
+    <div id="body"></div>
+</section>
+<script>
+    const element = document.getElementById('body');
+    element.attachShadow({ mode: 'open' }).innerHTML = `
+        <p>SHadow DOM内のp要素(影響なし)</p>
+    `;
+    document.body.appendChild(element);
+</script>
